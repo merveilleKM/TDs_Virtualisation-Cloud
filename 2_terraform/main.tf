@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 6.0"
-    }
-  }
-}
-
 # 1. Configuration du provider Google Cloud (région Belgique)
 provider "google" {
   project      = "polytech-dijon"
