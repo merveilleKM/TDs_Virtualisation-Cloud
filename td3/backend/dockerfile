@@ -1,0 +1,13 @@
+FROM debian:latest
+LABEL key="toolbox-ctn"
+RUN apt update && apt install -y bash
+RUN apt install -y htop
+RUN apt install -y vim 
+RUN apt-get install -y net-tools
+
+RUN useradd nonroot
+USER nonroot
+
+ENV OWNER="Merveille"
+
+CMD [ "sleep", "3600" ]
